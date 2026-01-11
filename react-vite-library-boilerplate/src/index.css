@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+ * Note: SDK styles are scoped to .rcs-root to prevent style leakage.
+ * The main index.css is only used for the dev preview.
+ * In production, styles are bundled with the component.
+ */

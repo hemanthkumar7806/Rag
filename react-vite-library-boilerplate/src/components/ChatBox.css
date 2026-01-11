@@ -1,0 +1,4 @@
+/* Tailwind directives - styles are scoped via .rcs-root in tailwind.config.js */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

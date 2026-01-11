@@ -1,0 +1,112 @@
+/* Scoped styles for ChatBox component to prevent style leakage */
+.chatBoxContainer {
+  @apply rcs-flex rcs-flex-col rcs-w-full;
+}
+
+.chatBoxHeader {
+  @apply rcs-pb-3;
+}
+
+.chatBoxTitle {
+  @apply rcs-text-lg rcs-font-semibold;
+}
+
+.chatBoxContent {
+  @apply rcs-flex-1 rcs-flex rcs-flex-col rcs-p-0 rcs-overflow-hidden;
+}
+
+.chatBoxScrollArea {
+  @apply rcs-flex-1 rcs-px-4;
+}
+
+.chatBoxMessages {
+  @apply rcs-space-y-4 rcs-py-4;
+}
+
+.chatBoxEmpty {
+  @apply rcs-text-center rcs-text-muted-foreground rcs-py-8;
+}
+
+.chatBoxMessageContainer {
+  @apply rcs-flex rcs-w-full;
+}
+
+.chatBoxMessageContainerUser {
+  @apply rcs-justify-end;
+}
+
+.chatBoxMessageContainerAssistant {
+  @apply rcs-justify-start;
+}
+
+.chatBoxMessage {
+  @apply rcs-rounded-lg rcs-px-4 rcs-py-2 rcs-max-w-[80%] rcs-text-sm;
+}
+
+.chatBoxMessageUser {
+  @apply rcs-bg-primary rcs-text-primary-foreground;
+}
+
+.chatBoxMessageAssistant {
+  @apply rcs-bg-muted rcs-text-muted-foreground;
+}
+
+.chatBoxMessageContent {
+  @apply rcs-whitespace-pre-wrap;
+}
+
+.chatBoxLoading {
+  @apply rcs-flex rcs-justify-start;
+}
+
+.chatBoxLoadingMessage {
+  @apply rcs-bg-muted rcs-text-muted-foreground rcs-rounded-lg rcs-px-4 rcs-py-2 rcs-flex rcs-items-center rcs-gap-2;
+}
+
+.chatBoxError {
+  @apply rcs-flex rcs-justify-start;
+}
+
+.chatBoxErrorMessage {
+  @apply rcs-bg-destructive/10 rcs-text-destructive rcs-rounded-lg rcs-px-4 rcs-py-2;
+}
+
+.chatBoxErrorText {
+  @apply rcs-text-sm;
+}
+
+.chatBoxForm {
+  @apply rcs-flex rcs-gap-2 rcs-p-4 rcs-border-t;
+}
+
+.chatBoxInput {
+  @apply rcs-flex-1;
+}
+
+.chatBoxMarkdown p {
+  @apply rcs-mb-2 rcs-last:mb-0;
+}
+
+.chatBoxMarkdown ul {
+  @apply rcs-list-disc rcs-pl-4 rcs-mb-2;
+}
+
+.chatBoxMarkdown ol {
+  @apply rcs-list-decimal rcs-pl-4 rcs-mb-2;
+}
+
+.chatBoxMarkdown li {
+  @apply rcs-mb-1;
+}
+
+.chatBoxMarkdown code {
+  @apply rcs-bg-background/50 rcs-px-1 rcs-py-0.5 rcs-rounded rcs-text-xs;
+}
+
+.chatBoxMarkdown pre {
+  @apply rcs-bg-background/50 rcs-p-2 rcs-rounded rcs-overflow-x-auto rcs-mb-2;
+}
+
+.chatBoxMarkdown pre code {
+  @apply rcs-bg-transparent rcs-p-0;
+}

@@ -1,0 +1,58 @@
+/* Scoped styles for Revature Chat SDK - prevents style leakage */
+/* All styles are scoped to .rcs-root to prevent conflicts */
+
+.rcs-root {
+  /* Reset and base styles */
+  --rcs-radius: 0.5rem;
+  
+  /* Color variables - White background with Green accents */
+  --rcs-background: 0 0% 100%;
+  --rcs-foreground: 142 76% 15%;
+  --rcs-card: 0 0% 100%;
+  --rcs-card-foreground: 142 76% 15%;
+  --rcs-primary: 142 71% 45%;
+  --rcs-primary-foreground: 0 0% 100%;
+  --rcs-secondary: 142 30% 96%;
+  --rcs-secondary-foreground: 142 76% 15%;
+  --rcs-muted: 142 20% 95%;
+  --rcs-muted-foreground: 142 10% 40%;
+  --rcs-accent: 142 50% 92%;
+  --rcs-accent-foreground: 142 76% 15%;
+  --rcs-destructive: 0 84.2% 60.2%;
+  --rcs-destructive-foreground: 0 0% 100%;
+  --rcs-border: 142 20% 88%;
+  --rcs-input: 142 20% 95%;
+  --rcs-ring: 142 71% 45%;
+}
+
+.rcs-root.dark {
+  /* Dark mode with green accents */
+  --rcs-background: 142 20% 8%;
+  --rcs-foreground: 142 30% 95%;
+  --rcs-card: 142 20% 10%;
+  --rcs-card-foreground: 142 30% 95%;
+  --rcs-primary: 142 71% 45%;
+  --rcs-primary-foreground: 0 0% 100%;
+  --rcs-secondary: 142 15% 18%;
+  --rcs-secondary-foreground: 142 30% 95%;
+  --rcs-muted: 142 15% 18%;
+  --rcs-muted-foreground: 142 20% 70%;
+  --rcs-accent: 142 25% 20%;
+  --rcs-accent-foreground: 142 30% 95%;
+  --rcs-destructive: 0 62.8% 30.6%;
+  --rcs-destructive-foreground: 0 0% 100%;
+  --rcs-border: 142 15% 25%;
+  --rcs-input: 142 15% 18%;
+  --rcs-ring: 142 71% 45%;
+}
+
+/* Scoped utility classes */
+.rcs-root * {
+  box-sizing: border-box;
+}
+
+.rcs-root button,
+.rcs-root input,
+.rcs-root textarea {
+  font-family: inherit;
+}
